@@ -49,4 +49,5 @@ dependencies {
         exclude group:"com.android.support"
     }
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    compile 'me.biubiubiu.justifytext:library:1.1'
 }

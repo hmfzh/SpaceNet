@@ -1,5 +1,6 @@
-package com.d3if0028.spacenet.home
+package com.d3if0028.spacenet.home.dashbord
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -14,8 +15,7 @@ import com.d3if0028.spacenet.Model.Berita
 import com.google.firebase.database.*
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.d3if0028.spacenet.home.dashbord.AstronomiAdapter
-import com.d3if0028.spacenet.home.dashbord.DataLangit
+import com.d3if0028.spacenet.DetailActivity
 import kotlinx.android.synthetic.main.fragment_home.rv_data
 import kotlinx.android.synthetic.main.fragment_home.rv_information
 
@@ -64,15 +64,18 @@ class DashboradFragment : Fragment() {
                     datList.add(berita!!)
                 }
 
-                rv_data.adapter = DataLangit(datList) {
+                if (datList.isNotEmpty()) {
+                    rv_data.adapter = DataLangit(datList) {
+                        val intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
+                        startActivity(intent)
+                    }
+
+                    rv_information.adapter = AstronomiAdapter(datList) {
+                        val intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
+                        startActivity(intent)
+                    }
 
                 }
-
-                rv_information.adapter = AstronomiAdapter(datList) {
-
-                }
-
-
 
 
             }
