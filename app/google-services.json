@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "71829403543",
+    "project_id": "spacenet-bffb1",
+    "storage_bucket": "spacenet-bffb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71829403543:android:8f845e3b376f000b8d36d2",
+        "android_client_info": {
+          "package_name": "com.d3if0028.spacenet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71829403543-hbakv2k3fmklb1o0mrnshd1vg3c7mqnr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0VK1Asc7psO78XB5qWQIlQllXQbN1InU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71829403543-hbakv2k3fmklb1o0mrnshd1vg3c7mqnr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
