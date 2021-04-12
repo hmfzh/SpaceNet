@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".Dashboard">
+    tools:context=".home.Dashboard">
 
     <FrameLayout
         android:id="@+id/layout_frame"
@@ -33,7 +33,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/ic_baseline_home_24" />
+            android:src="@drawable/ic_baseline_home_active" />
 
         <ImageView
             android:id="@+id/iv_menu2"
@@ -47,7 +47,16 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:src="@drawable/ic_baseline_library_books" />
+
+        <ImageView
+            android:id="@+id/iv_menu4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:src="@drawable/ic_baseline_settings_24" />
+
+
 
 
     </LinearLayout>

@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.d3if0028.spacenet.Dashboard
+import com.d3if0028.spacenet.home.Dashboard
 import com.d3if0028.spacenet.Preferences
 import com.d3if0028.spacenet.R
 import com.google.firebase.database.*

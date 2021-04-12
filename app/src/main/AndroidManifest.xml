@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity android:name="com.d3if0028.spacenet.sign.signup.SignUp"/>
-        <activity android:name=".Dashboard" />
+        <activity android:name=".home.Dashboard" />
         <activity android:name="com.d3if0028.spacenet.sign.signin.SignIn" />
         <activity android:name=".Home" />
         <activity android:name=".MainActivity">
