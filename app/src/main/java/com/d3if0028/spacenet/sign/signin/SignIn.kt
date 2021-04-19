@@ -68,6 +68,7 @@ class SignIn : AppCompatActivity() {
                         preference.setValues("email", user.email.toString())
                         preference.setValues("username", user.username.toString())
                         preference.setValues("password" , user.password.toString())
+                        preference.setValues("url", user.url.toString())
                         preference.setValues("status","1")
                         val intent = Intent(this@SignIn, Dashboard::class.java)
                         startActivity(intent)
@@ -83,3 +84,5 @@ class SignIn : AppCompatActivity() {
         })
   }
 }
+
+

@@ -9,4 +9,5 @@ data class Berita (
     var judul: String ?="",
     var poster: String ?="",
     var date: String ?="",
+
 ): Parcelable
