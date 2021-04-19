@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.d3if0028.spacenet.home.Dashboard
 import com.d3if0028.spacenet.Preferences
 import com.d3if0028.spacenet.R
+import com.d3if0028.spacenet.sign.signup.SignUp
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
@@ -25,11 +26,16 @@ class SignIn : AppCompatActivity() {
         mDatabase = FirebaseDatabase.getInstance().getReference("User")
         preference= Preferences(this)
 
-
+        preference.setValues("home","1")
         if(preference.getValues("status").equals("1")){
             finishAffinity()
             val goHome = Intent(this@SignIn, Dashboard::class.java)
             startActivity(goHome)
+        }
+
+        tv_regis_account.setOnClickListener{
+            val goRegis = Intent(this@SignIn, SignUp::class.java)
+            startActivity(goRegis)
         }
 
         btn_masuk.setOnClickListener {

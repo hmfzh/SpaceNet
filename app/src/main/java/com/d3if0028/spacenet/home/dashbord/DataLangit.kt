@@ -51,4 +51,3 @@ RecyclerView.Adapter<DataLangit.ViewHolder>() {
 }
 
 
-
