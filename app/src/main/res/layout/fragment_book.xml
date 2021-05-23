@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+
     tools:context=".home.BookFragment"
-    android:background="@color/black"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:background="@color/black">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -48,6 +52,7 @@
         android:layout_width="273dp"
         android:layout_height="100dp"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/shape_grey_color"
         android:text="Planet"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,3 +60,4 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_fakta_tata_surya" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
