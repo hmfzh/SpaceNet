@@ -1,15 +1,13 @@
-package com.d3if0028.spacenet.home
+package com.d3if0028.spacenet.home.setting
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.app.ActivityCompat.finishAffinity
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 import com.d3if0028.spacenet.Home
+import com.d3if0028.spacenet.Learn.Planet
 import com.d3if0028.spacenet.Preferences
 import com.d3if0028.spacenet.R
 import com.d3if0028.spacenet.sign.signin.SignIn
@@ -38,13 +36,9 @@ class SettingFragment : Fragment() {
 
         preferences = Preferences(context!!.applicationContext)
 
-        iv_nama.text = preferences.getValues("nama")
-        tv_email.text = preferences.getValues("email")
+//        iv_nama.text = preferences.getValues("nama")
+//        tv_email.text = preferences.getValues("email")
 
-        Glide.with(this)
-            .load(preferences.getValues("url"))
-            .apply(RequestOptions.circleCropTransform())
-           .into(iv_profile)
 
         tv_logout.setOnClickListener {
             preferences.setValues("status","0")
@@ -53,11 +47,14 @@ class SettingFragment : Fragment() {
 
         }
 
-        tv_change_image.setOnClickListener {
-            val goHome = Intent((activity), PhotoScereenActivity::class.java)
-            startActivity(goHome)
+
+
+        tv_data_akun.setOnClickListener{
+                val goHome = Intent((activity), DataAcitivty::class.java)
+                startActivity(goHome)
 
         }
+
 
         preferences.setValues("logout","0")
         if(preferences.getValues("status").equals("0")){
@@ -65,10 +62,23 @@ class SettingFragment : Fragment() {
             startActivity(goHome)
         }
 
-        iv_profile.setOnClickListener {
-            val goHome = Intent((activity), PhotoScereenActivity::class.java)
-            startActivity(goHome)
+        tv_data_akun.setOnClickListener {
+            val intent = Intent(activity, DataAkunActivity::class.java)
+            startActivity(intent)
         }
+
+        tv_q_n_a.setOnClickListener {
+            val intent = Intent(activity, QnAActivity::class.java)
+            startActivity(intent)
+        }
+
+        tv_info_akun.setOnClickListener {
+            val intent = Intent(activity, InfoAppActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
     }
 
 

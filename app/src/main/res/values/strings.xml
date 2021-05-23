@@ -14,4 +14,5 @@
     <string name="setting">Settings</string>
     <string name="logout">Logout</string>
     <string name="change_image">Change Image</string>
+    <string name="q_a"><![CDATA[Q & A]]></string>
 </resources>

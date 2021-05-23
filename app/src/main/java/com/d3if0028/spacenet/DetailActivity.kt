@@ -30,11 +30,10 @@ class DetailActivity : AppCompatActivity() {
                     .into(iv_poster_detail)
 
 //
-        iv_back.setOnClickListener {
+        iv_back_tatasurya.setOnClickListener {
             finish()
         }
 
-        rv_sumber.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         getData()
     }
 

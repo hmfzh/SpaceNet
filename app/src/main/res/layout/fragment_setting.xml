@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".home.SettingFragment"
+    tools:context=".home.setting.SettingFragment"
     android:background="@color/black">
 
     <!-- TODO: Update blank fragment layout -->
@@ -35,55 +35,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view" />
 
-    <ImageView
-        android:id="@+id/iv_profile"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/user_pic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_total"
-        app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
 
-    <TextView
-        android:id="@+id/iv_nama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="Muhammad Ilham Hafizha"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_profile" />
-
-
-    <TextView
-        android:id="@+id/tv_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="@string/email"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_nama" />
 
     <TextView
         android:id="@+id/tv_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:drawablePadding="10dp"
         android:fontFamily="@font/montserrat"
         android:text="@string/logout"
         android:textColor="@color/white"
         android:textSize="16sp"
+        app:drawableLeftCompat="@drawable/ic_baseline_logout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_nama"
-        app:drawableLeftCompat="@drawable/ic_baseline_logout" />
+        app:layout_constraintTop_toBottomOf="@+id/view_5" />
 
     <View
         android:id="@+id/view"
@@ -98,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_logout" />
 
     <TextView
-        android:id="@+id/tv_change_image"
+        android:id="@+id/tv_data_akun"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -106,16 +73,17 @@
         android:layout_marginEnd="16dp"
         android:drawablePadding="10dp"
         android:fontFamily="@font/montserrat"
-        android:text="@string/change_image"
+        android:text="Data Akun"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:drawableLeftCompat="@drawable/ic_change"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/view_9" />
 
     <View
-        android:id="@+id/view_2"
+        android:id="@+id/view_3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginStart="16dp"
@@ -124,5 +92,78 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_change_image" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_data_akun" />
+
+    <TextView
+        android:id="@+id/tv_q_n_a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Q&amp;A"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:drawableLeftCompat="@drawable/ic_baseline_question_answer_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_3" />
+
+    <View
+        android:id="@+id/view_4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q_n_a" />
+
+
+    <View
+        android:id="@+id/view_9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total" />
+
+    <TextView
+        android:id="@+id/tv_info_akun"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Informasi Aplikasi"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:drawableLeftCompat="@drawable/ic_baseline_info_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_4" />
+
+    <View
+        android:id="@+id/view_5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_akun" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

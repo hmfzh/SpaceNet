@@ -10,12 +10,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.d3if0028.spacenet.Learn.TataSurya
 import com.d3if0028.spacenet.Model.Berita
+import com.d3if0028.spacenet.Model.Solarsystem
 import com.d3if0028.spacenet.R
 
-class DataLangit(private var data: ArrayList<Berita>,
-                 private val listener: (Berita) -> Unit) :
-RecyclerView.Adapter<DataLangit.ViewHolder>() {
-
+class TataSuryaAdapter(private var data: ArrayList<Solarsystem>,
+                        private val listener: (Solarsystem) -> Unit) :
+    RecyclerView.Adapter<TataSuryaAdapter.ViewHolder>() {
 
     lateinit var contextAdapter : Context
 
@@ -23,7 +23,7 @@ RecyclerView.Adapter<DataLangit.ViewHolder>() {
         private val tvTitle: TextView = view.findViewById(R.id.tv_title)
         private val tvImage: ImageView = view.findViewById(R.id.iv_poster_image)
 
-        fun bindItem(data:Berita, listener: (Berita) -> Unit, context: Context){
+        fun bindItem(data:Solarsystem, listener: (Solarsystem) -> Unit, context: Context){
             tvTitle.setText(data.judul)
 
             Glide.with(context)
@@ -40,15 +40,15 @@ RecyclerView.Adapter<DataLangit.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         contextAdapter = parent.context
-        val inflatedView : View = layoutInflater.inflate(R.layout.row_item_data_langit,parent,false)
+        val inflatedView : View = layoutInflater.inflate(R.layout.row_item_tatasurya,parent,false)
         return  ViewHolder(inflatedView)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder:ViewHolder, position: Int) {
         holder.bindItem(data[position],listener,contextAdapter)
     }
 
     override fun getItemCount(): Int = data.size
+
+
 }
-
-

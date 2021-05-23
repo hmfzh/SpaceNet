@@ -16,7 +16,6 @@ import com.google.firebase.database.*
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.d3if0028.spacenet.DetailActivity
-import kotlinx.android.synthetic.main.activity_photo_scereen.*
 import kotlinx.android.synthetic.main.fragment_home.rv_data
 import kotlinx.android.synthetic.main.fragment_home.rv_information
 
@@ -44,7 +43,7 @@ class DashboradFragment : Fragment() {
         Glide.with(this)
             .load(preferences.getValues("url"))
             .apply(RequestOptions.circleCropTransform())
-           // .into(iv_profile)
+           //.into(iv_profile)
 
         rv_data.layoutManager = GridLayoutManager(context,2)
        rv_information.layoutManager = LinearLayoutManager(context)

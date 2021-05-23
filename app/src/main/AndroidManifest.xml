@@ -24,7 +24,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".home.PhotoScereenActivity"/>
+        <activity android:name=".home.setting.InfoAppActivity"></activity>
+        <activity android:name=".home.setting.QnAActivity" />
+        <activity android:name=".home.setting.DataAkunActivity" />
+        <activity android:name=".DetailPlanetActivity" />
+        <activity android:name=".DetailTataSuryaActivity" />
+        <activity android:name=".Learn.Planet" />
+        <activity android:name=".Learn.Fakta_TasSur" />
+        <activity android:name=".Learn.TataSurya" />
+        <activity android:name=".home.PhotoScereenActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".sign.signup.SignUp" />
         <activity android:name=".home.Dashboard" />

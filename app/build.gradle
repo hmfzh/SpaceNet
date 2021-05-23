@@ -19,6 +19,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        viewBinding true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -65,4 +69,55 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.7.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+
+    // Default dependencies
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+
+//    implementation "androidx.appcompat:appcompat:$appCompatVersion"
+//    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+//    testImplementation "junit:junit:$junitVersion"
+//    androidTestImplementation "androidx.test.ext:junit:$testExtJunitVersion"
+//    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+
+    //Material
+//    implementation "com.google.android.material:material:$materialVersion"
+
+    // Navigation Component
+//    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+//    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+
+    // Dagger Hilt
+//    implementation "com.google.dagger:hilt-android:$hiltVersion"
+//    kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
+//    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hiltAndroidXVersion"
+//    kapt "androidx.hilt:hilt-compiler:$hiltAndroidXVersion"
+
+    // Retrofit + GSON
+//    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+//    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    // Paging 3
+ //   implementation "androidx.paging:paging-runtime:$pagingVersion"
+
+    // Glide
+//    implementation "com.github.bumptech.glide:glide:$glideVersion"
+
+    // Room components
+//    implementation "androidx.room:room-runtime:$roomVersion"
+//    annotationProcessor "androidx.room:room-compiler:$roomVersion"
+//    androidTestImplementation "androidx.room:room-testing:$roomVersion"
+//    implementation "androidx.room:room-ktx:$roomVersion"
+//    kapt "androidx.room:room-compiler:$roomVersion"
+
+    // Lifecycle components
+//    implementation "androidx.lifecycle:lifecycle-extensions:$archLifecycleVersion"
+//    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$archLifecycleVersion"
+
 }
+
+
+//kapt {
+//    correctErrorTypes true
+//}

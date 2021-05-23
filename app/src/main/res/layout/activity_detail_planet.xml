@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/iv_back_detail_tatasurya"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".DetailTataSuryaActivity">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="12dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Nebula Orion" />
+
+        <ImageView
+            android:id="@+id/iv_poster_detail"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_judul"
+            app:srcCompat="@drawable/ic_poster"
+            />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_poster_detail"
+            tools:text="text" />
+
+
+
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/simpleTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_desc">
+
+            <TableRow
+                android:id="@+id/firstRow"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:gravity="center"
+                    android:text="Radius"
+                    android:textSize="12dp"
+                    android:background="@drawable/shape_borde_black"/>
+
+                <TextView
+                    android:id="@+id/tv_radius"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_borde_black"
+                    android:padding="18dip"
+                    android:text="6851.1 km"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/firstwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:gravity="center"
+                    android:text="Panjang Tahun"
+                    android:textSize="12dp"
+                    android:background="@drawable/shape_borde_black"/>
+
+                <TextView
+                    android:id="@+id/tv_panjang_tahun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_borde_black"
+                    android:padding="18dip"
+                    android:text="6851.1 km"
+
+                    android:textSize="12dp" />
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/firstree"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:gravity="center"
+                    android:text="Diameter"
+                    android:textSize="12dp"
+                    android:background="@drawable/shape_borde_black"/>
+
+                <TextView
+
+                    android:id="@+id/tv_diameter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_borde_black"
+                    android:padding="18dip"
+                    android:text="6851.1 km"
+
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/firstfour"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <!-- first element of the row-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:gravity="center"
+                    android:text="Bulan"
+                    android:textSize="12dp"
+                    android:background="@drawable/shape_borde_black"/>
+
+                <TextView
+                    android:id="@+id/tv_bulan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_borde_black"
+                    android:padding="18dip"
+                    android:text="6851.1 km"
+                    android:textSize="12dp" />
+            </TableRow>
+
+
+
+        </TableLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

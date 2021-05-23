@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.d3if0028.spacenet.R
+import com.d3if0028.spacenet.favorite.FavoriteFragment
 import com.d3if0028.spacenet.home.dashbord.DashboradFragment
+import com.d3if0028.spacenet.home.setting.SettingFragment
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
 class Dashboard : AppCompatActivity() {
