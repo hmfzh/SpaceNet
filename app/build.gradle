@@ -15,7 +15,7 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -48,6 +48,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.firebase:firebase-database:19.7.0'
     implementation 'com.google.firebase:firebase-storage:19.2.2'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
 
 
     testImplementation 'junit:junit:4.+'
@@ -69,8 +70,8 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.7.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
-
-
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
     // Default dependencies
     implementation fileTree(dir: "libs", include: ["*.jar"])
 

@@ -24,11 +24,11 @@ RecyclerView.Adapter<AstronomiAdapter.ViewHolder>() {
         private val tvImage: ImageView = view.findViewById(R.id.iv_poster_image)
 
         fun bindItem(data:Berita, listener: (Berita) -> Unit, context: Context){
-            tvTitle.setText(data.judul)
+            tvTitle.setText(data.title)
             tvDate.setText(data.date)
 
             Glide.with(context)
-                .load(data.poster)
+                .load(data.images)
                 .into(tvImage)
 
             itemView.setOnClickListener {

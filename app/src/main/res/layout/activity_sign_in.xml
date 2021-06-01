@@ -69,7 +69,7 @@
         android:background="@drawable/shape_grey_color"
         android:drawableStart="@drawable/prof"
         android:drawablePadding="25dp"
-        android:hint="@string/email"
+        android:hint="@string/username"
         android:inputType="textPersonName"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"

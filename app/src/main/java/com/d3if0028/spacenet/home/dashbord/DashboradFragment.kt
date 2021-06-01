@@ -16,6 +16,7 @@ import com.google.firebase.database.*
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.d3if0028.spacenet.DetailActivity
+import com.d3if0028.spacenet.Model.Astronomi
 import kotlinx.android.synthetic.main.fragment_home.rv_data
 import kotlinx.android.synthetic.main.fragment_home.rv_information
 
@@ -24,6 +25,7 @@ class DashboradFragment : Fragment() {
     private lateinit var preferences: Preferences
     lateinit var mDatabase: DatabaseReference
     private var datList = ArrayList<Berita>()
+//    private var dataList = ArrayList<Astronomi>()
 
 
 
@@ -38,6 +40,7 @@ class DashboradFragment : Fragment() {
 
         preferences = Preferences(activity!!.applicationContext)
         mDatabase = FirebaseDatabase.getInstance().getReference("Langit")
+      //  mDatabase = FirebaseDatabase.getInstance().getReference("Astronomi")
 
 
         Glide.with(this)
@@ -59,6 +62,7 @@ class DashboradFragment : Fragment() {
 
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 datList.clear()
+               // dataList.clear()
                 for (getdataSnapshot in dataSnapshot.children) {
                     var berita = getdataSnapshot.getValue(Berita::class.java)
                     datList.add(berita!!)
@@ -69,15 +73,23 @@ class DashboradFragment : Fragment() {
                         val intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
                         startActivity(intent)
                     }
-
                     rv_information.adapter = AstronomiAdapter(datList) {
-                        val intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
+                        val intent = Intent(context, DetailAstronomiActivity::class.java).putExtra("data", it)
                         startActivity(intent)
                     }
-
                 }
 
-
+//                for (getdataSnapshot in dataSnapshot.children) {
+//                    var astronomi = getdataSnapshot.getValue(Berita::class.java)
+//                    dataList.add(astronomi!!)
+//                }
+//
+//                if(dataList.isNotEmpty()){
+//                    rv_information.adapter = AstronomiAdapter(datList) {
+//                        val intent = Intent(context, DetailAstronomiActivity::class.java).putExtra("data", it)
+//                        startActivity(intent)
+//                    }
+//                }
             }
 
 

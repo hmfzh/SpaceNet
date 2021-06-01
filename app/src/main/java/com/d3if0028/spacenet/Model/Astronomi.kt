@@ -4,7 +4,9 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class  FaktaTataSurya (
+data class Astronomi (
         var desc: String ?="",
-        var title: String ?="",
-): Parcelable
+        var judul: String ?="",
+        var poster: String ?="",
+        var date: String ?="",
+        ): Parcelable

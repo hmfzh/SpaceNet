@@ -24,7 +24,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".home.setting.InfoAppActivity"></activity>
+        <activity android:name=".home.dashbord.DetailAstronomiActivity"></activity>
+        <activity android:name=".home.setting.InfoAppActivity" />
         <activity android:name=".home.setting.QnAActivity" />
         <activity android:name=".home.setting.DataAkunActivity" />
         <activity android:name=".DetailPlanetActivity" />

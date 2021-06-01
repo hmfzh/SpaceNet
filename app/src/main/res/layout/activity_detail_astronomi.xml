@@ -2,20 +2,20 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/black"
     android:layout_height="match_parent"
+    android:background="@color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/iv_back_detail_tatasurya"
+        android:id="@+id/iv_back"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"
-        tools:context=".DetailTataSuryaActivity">
+        tools:context=".home.dashbord.DetailAstronomiActivity">
 
         <ImageView
-            android:id="@+id/iv_back"
+            android:id="@+id/iv_back_tatasurya"
             android:layout_width="12dp"
             android:layout_height="18dp"
             android:layout_marginStart="24dp"
@@ -36,15 +36,17 @@
 
         <TextView
             android:id="@+id/tv_judul"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
             android:textSize="24sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
-            tools:text="Nebula Orion" />
+            app:layout_constraintTop_toBottomOf="@+id/iv_back_tatasurya"
+            tools:text="Hancurnya Puing-Puing Roket China" />
 
         <ImageView
             android:id="@+id/iv_poster_detail"
@@ -64,60 +66,16 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
-            android:text="TextView"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_poster_detail"
-            tools:text="Nebula Orion dikenal juga dengan Messier 42 atau M42 atau NGC 1976 adalah nebula memanjang yang terletak di selatan Sabuk
-         Orion pada rasi bintang Orion. Objek ini merupakan salah satu nebula yang paling terang, dan dapat dilihat menggunakan mata telanjang M42 terletak pada jarak 1,344 ± 20 tahun cahaya dan merupakan daerah pembentukan bintang besar yang paling dekat dengan bumi. Nebula M42 diestimasikan sepanjang 24 tahun cahaya dengan massa sekitar 2000 kali massa." />
-
-        <TextView
-            android:id="@+id/tv_sumber"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
-            android:text="TextView"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_desc"
-            tools:text="Sumber" />
-
-        <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
-            android:text="TextView"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_sumber"
-            tools:text="Dari mana asalnya?" />
-
-        <TextView
-            android:id="@+id/tv_content"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="32dp"
             android:text="TextView"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/iv_poster_detail"
             tools:text="Nebula Orion dikenal juga dengan Messier 42 atau M42 atau NGC 1976 adalah nebula memanjang yang terletak di selatan Sabuk
          Orion pada rasi bintang Orion. Objek ini merupakan salah satu nebula yang paling terang, dan dapat dilihat menggunakan mata telanjang M42 terletak pada jarak 1,344 ± 20 tahun cahaya dan merupakan daerah pembentukan bintang besar yang paling dekat dengan bumi. Nebula M42 diestimasikan sepanjang 24 tahun cahaya dengan massa sekitar 2000 kali massa." />
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

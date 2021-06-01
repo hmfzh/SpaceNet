@@ -25,23 +25,23 @@ class Dashboard : AppCompatActivity() {
         iv_menu1.setOnClickListener {
             setFragment(fragmentHome)
             changeIcon(iv_menu1,R.drawable.ic_baseline_home_active)
-            changeIcon(iv_menu2,R.drawable.ic_baseline_favorite_24)
+//            changeIcon(iv_menu2,R.drawable.ic_baseline_favorite_24)
             changeIcon(iv_menu3,R.drawable.ic_baseline_library_books)
             changeIcon(iv_menu4,R.drawable.ic_baseline_settings_24)
         }
 
-        iv_menu2.setOnClickListener {
-            setFragment(fragmentFavorite)
-            changeIcon(iv_menu1,R.drawable.ic_baseline_home_24)
-            changeIcon(iv_menu2,R.drawable.ic_baseline_favorite_active)
-            changeIcon(iv_menu3,R.drawable.ic_baseline_library_books)
-            changeIcon(iv_menu4,R.drawable.ic_baseline_settings_24)
-        }
+    //        iv_menu2.setOnClickListener {
+    //            setFragment(fragmentFavorite)
+    //            changeIcon(iv_menu1,R.drawable.ic_baseline_home_24)
+    //  //          changeIcon(iv_menu2,R.drawable.ic_baseline_fa vorite_active)
+    //            changeIcon(iv_menu3,R.drawable.ic_baseline_library_books)
+    //            changeIcon(iv_menu4,R.drawable.ic_baseline_settings_24)
+    //        }
 
         iv_menu3.setOnClickListener {
             setFragment(fragmentBook)
             changeIcon(iv_menu1,R.drawable.ic_baseline_home_24)
-            changeIcon(iv_menu2,R.drawable.ic_baseline_favorite_24)
+    //        changeIcon(iv_menu2,R.drawable.ic_baseline_favorite_24)
             changeIcon(iv_menu3,R.drawable.ic_baseline_library_books_active)
             changeIcon(iv_menu4,R.drawable.ic_baseline_settings_24)
         }
@@ -49,7 +49,7 @@ class Dashboard : AppCompatActivity() {
         iv_menu4.setOnClickListener {
             setFragment(fragmentSetting)
             changeIcon(iv_menu1,R.drawable.ic_baseline_home_24)
-            changeIcon(iv_menu2,R.drawable.ic_baseline_favorite_24)
+      //      changeIcon(iv_menu2,R.drawable.ic_baseline_favorite_24)
             changeIcon(iv_menu3,R.drawable.ic_baseline_library_books)
             changeIcon(iv_menu4,R.drawable.ic_baseline_settings_active)
         }

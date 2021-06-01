@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="54dp"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,17 +71,6 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_poster_detail"
         tools:text="Nebula Orion dikenal juga dengan Messier 42 atau M42 atau NGC 1976 adalah nebula memanjang yang terletak di selatan Sabuk
          Orion pada rasi bintang Orion. Objek ini merupakan salah satu nebula yang paling terang, dan dapat dilihat menggunakan mata telanjang M42 terletak pada jarak 1,344 ± 20 tahun cahaya dan merupakan daerah pembentukan bintang besar yang paling dekat dengan bumi. Nebula M42 diestimasikan sepanjang 24 tahun cahaya dengan massa sekitar 2000 kali massa." />
-
-    <ImageView
-        android:id="@+id/img_fav"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_poster_detail"
-        app:layout_constraintEnd_toEndOf="@+id/iv_poster_detail"
-        app:srcCompat="@drawable/ic_baseline_favorite_icon"
-        tools:ignore="VectorDrawableCompat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

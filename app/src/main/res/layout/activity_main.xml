@@ -42,7 +42,7 @@
         android:layout_marginStart="120dp"
         android:layout_marginEnd="117dp"
         android:layout_marginBottom="149dp"
-        android:text="Stargazing AppTextView"
+        android:text="Stargazing App"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
